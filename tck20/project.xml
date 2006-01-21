@@ -54,13 +54,13 @@ NOTE!! This project has a nonstandard structure. The source files are located in
         <dependency>
             <groupId>jpox</groupId>
             <artifactId>jpox</artifactId>
-            <version>SNAPSHOT</version>
+            <version>1.1.0-beta-6</version>
             <url>http://www.jpox.org/docs/download.html</url>
         </dependency>
         <dependency>
             <groupId>jpox</groupId>
             <artifactId>jpox-enhancer</artifactId>
-            <version>SNAPSHOT</version>
+            <version>1.1.0-beta-6</version>
             <url>http://www.jpox.org/docs/download.html</url>
         </dependency>
         <dependency>
@@ -113,13 +113,13 @@ NOTE!! This project has a nonstandard structure. The source files are located in
         <dependency>
             <groupId>jpox</groupId>
             <artifactId>jpox-c3p0</artifactId>
-            <version>SNAPSHOT</version>
+            <version>1.1.0-beta-6</version>
             <url>http://www.jpox.org/docs/download.html</url>
         </dependency>
         <dependency>
             <groupId>jpox</groupId>
             <artifactId>jpox-dbcp</artifactId>
-            <version>SNAPSHOT</version>
+            <version>1.1.0-beta-6</version>
             <url>http://www.jpox.org/docs/download.html</url>
         </dependency>
         <dependency>
