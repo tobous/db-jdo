@@ -1,0 +1,51 @@
+TCK Coverage Document for JSR-243 Java Data Objects 2.0:
+
+
+TCK Components:
+---------------
+- RunRules.html
+- Test Suite
+- Signature Test
+- JUnit Harness
+
+Terminology of Metrics
+----------------------
+- Assertion: A specific statement of functionality or behavior derived from a specification.
+  A testable assertion is one that can be validated in an implementation by testing.
+- Test: A binary application (or script) comprised of one or more Test Cases.
+- Test Case: A single set of test inputs, execution conditions, and expected results
+  developed to verify an implementation's conformance with a specific assertion.
+- Specification Assertion Coverage: Ratio of all assertions tested by at least one test
+  case to the total number of testable assertions defined by the specification.
+- API Coverage: Ratio of methods directly exercised by test cases to the total number
+  of methods defined by the specification.
+
+Coverage
+--------
+- Total testable assertions: 1154 testable assertions
+  Assertions identified through the use of hand markup
+- API Signature Coverage: 100% for all defined public and protected members and validated
+  by the signature test included with the TCK.
+- See the following HTML reports in this bundle for JBI specification and API coverage metrics:
+
+Quality Assurance
+-----------------
+- TCK was run using representative configurations of the Reference Implementation on
+  the following platforms:
+   * Red Hat Linux/Sun J2SE 1.4.2
+   * Windows XP/Sun J2SE 1.4.2
+   * MacOSX 10.4/Sun J2SE 1.4.2
+
+- Code quality was demonstrated through use of code reviews and inspections
+- Documentation instructions were verified and tested
+
+Justification of Adequacy
+-------------------------
+As the second major release of this specification, the coverage is good and consistent
+with the coverage of similar JSRs at this level of spec maturity. Coverage variance
+is due to effects of late spec changes and the availability/cost of test development
+resources. We plan to increase coverage over the next few months and release an updated
+version of the TCK. Licensees are strongly encouraged to utilize the latest version of the
+TCK when testing the compatibility of their JDO implementation, provided the TCK is
+available, and the licensee chooses to use it, at the time of testing.
+
