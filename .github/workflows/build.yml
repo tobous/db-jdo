@@ -73,10 +73,11 @@ jobs:
         run: |
           mvn -B --no-transfer-progress -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn clean install
 
+      # Exports the TCK logs in case the build fails
       - name: Export TCK logs
-        if: '!cancelled()'
+        if: ${{ failure() }}
         uses: actions/upload-artifact@v3
         with:
-          name: tck-logs-${{ matrix.java }}
+          name: tck-logs-jdk-${{ matrix.java }}
           retention-days: 14
           path: tck/target/logs/**/*
