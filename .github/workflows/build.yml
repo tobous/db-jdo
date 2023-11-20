@@ -77,6 +77,6 @@ jobs:
         if: '!cancelled()'
         uses: actions/upload-artifact@v3
         with:
-          name: tck-logs
+          name: tck-logs-${{ matrix.java }}
           retention-days: 14
           path: tck/target/logs/**/*
