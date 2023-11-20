@@ -72,6 +72,10 @@ jobs:
       - name: Build JDO & Run TCK
         run: |
           mvn -B --no-transfer-progress -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn clean install
+          if [ ${{ matrix.java }} = 8 ] || [ ${{ matrix.java }} = 17 ]
+          then
+            false
+          fi
 
       # Exports the TCK logs in case the build fails
       - name: Export TCK logs
