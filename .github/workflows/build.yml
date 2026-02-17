@@ -78,7 +78,7 @@ jobs:
       # Builds JDO & Runs the TCK
       - name: Build JDO & Run TCK
         run: |
-          mvn -B --no-transfer-progress -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn clean install
+          mvn -B --no-transfer-progress -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn -e -x clean install
 
       # Exports the TCK logs in case the build fails
       - name: Export TCK logs
