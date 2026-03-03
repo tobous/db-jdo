@@ -42,7 +42,7 @@ jobs:
       shell: 'bash'
 
   build-jdo-data-nucleus-5:
-    name: Build JDO & Run TCK
+    name: Build JDO & Run TCK - DataNucleus 5
     needs: format-check
     runs-on: ubuntu-latest
     strategy:
@@ -82,12 +82,12 @@ jobs:
           path: tck/target/logs/**/*
 
   build-jdo-nucleus-6:
-    name: Build JDO & Run TCK
+    name: Build JDO & Run TCK - DataNucleus 6
     needs: format-check
     strategy:
       matrix:
         # run different builds with the listed java versions
-        java: [ 11, 25 ]
+        java: [ 11, 21 ]
         # run different builds with the listed java versions
         os: [ ubuntu-latest, windows-latest ]
         exclude:
